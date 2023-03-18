@@ -378,6 +378,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+  margin: auto 0;
 }
 
 .included-gallery-item {
