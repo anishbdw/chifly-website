@@ -12,7 +12,12 @@
 
   .left-nav-container {
     gap: 6.4rem;
-    transform: translate(-9rem);
+    width: 96.5rem;
+  }
+
+  .hero-header span::after {
+    width: 44.5rem;
+    height: 4.5rem;
   }
 
   .included-gallery-item {
@@ -29,6 +34,7 @@
 
   .left-nav-container {
     gap: 4.8rem;
+    width: 80rem;
   }
 
   .section-hero {
@@ -45,7 +51,7 @@
   }
 
   .hero-header span::after {
-    width: 38rem;
+    width: 37rem;
     height: 4.5rem;
   }
 
@@ -87,4 +93,37 @@
   html {
     font-size: 37.5%;
   }
+
+  .left-nav-container {
+    width: 76rem;
+    gap: 3.2rem;
+  }
+
+  .hero-content-container {
+    max-width: 76rem;
+  }
+
+  .hero-header {
+    font-size: 7.6rem;
+  }
+
+  /* .hero-feature-description {
+    font-size: 1.8rem;
+  }
+
+  .hero-testimonial-description {
+    font-size: 1.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+  }
+
+  .btn--cta-white:link,
+  .btn--cta-white:visited,
+  .btn--cta-black:link,
+  .btn--cta-black:visited {
+    padding: 1.2rem 2rem;
+  } */
 }
