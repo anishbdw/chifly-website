@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
-    <!-- IONICONS LINKS -->
+    <!-- EXTERNAL JS LINKS -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -28,6 +28,13 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <!-- JS SCRIPT LINKS -->
+    <script defer src="javascript/script.js"></script>
 
     <!-- DOCUMENT TITLE -->
     <title>Drone Photography</title>
@@ -43,19 +50,25 @@
               <img class="logo-img" src="content/imgs/chifly-logo-img.png" />
               <p class="logo-text">ChiFly</p>
             </div>
-            <a class="btn btn--main-nav" href="#">Home</a>
-            <a class="btn btn--main-nav" href="#">Process</a>
-            <a class="btn btn--main-nav" href="#">Content</a>
-            <a class="btn btn--main-nav" href="#">Portfolio</a>
+            <a class="btn btn--main-nav" href="#nav--section-hero">Home</a>
+            <a class="btn btn--main-nav" href="#nav--section-hiw">Process</a>
+            <a class="btn btn--main-nav" href="#nav--section-included"
+              >Content</a
+            >
+            <a class="btn btn--main-nav" href="#nav--section-testimonials"
+              >Portfolio</a
+            >
           </div>
           <div class="right-nav-container">
-            <a class="btn btn--cta-white" href="#">Contact</a>
+            <a class="btn btn--cta-white" href="#nav--section-contact"
+              >Contact</a
+            >
           </div>
         </nav>
       </section>
 
       <!-- HERO SECTION -->
-      <section class="section-hero">
+      <section class="section-hero" id="nav--section-hero">
         <!-- LEFT SIDE -->
         <div class="hero-content-container">
           <h1 class="hero-header">
@@ -83,8 +96,10 @@
             </div>
           </div>
           <div class="hero-btn-container">
-            <a class="btn btn--cta-white" href="#">Book now</a>
-            <a class="btn btn--cta-black" href="#"
+            <a class="btn btn--cta-white" href="#nav--section-contact"
+              >Book now</a
+            >
+            <a class="btn btn--cta-black" href="#nav--section-features"
               >Learn more <span>&rarr;</span></a
             >
           </div>
@@ -103,7 +118,7 @@
       </section>
 
       <!-- FEATURES SECTION -->
-      <section class="section-features">
+      <section class="section-features" id="nav--section-features">
         <!-- FEATURE HEADER -->
         <div class="header-container">
           <h3 class="subheading">Features</h3>
@@ -154,7 +169,7 @@
       </section>
 
       <!-- HOW IT WORKS SECTION -->
-      <section class="hiw-section">
+      <section class="hiw-section" id="nav--section-hiw">
         <div class="header-container">
           <h3 class="subheading">How it works</h3>
           <h1 class="heading-primary">Start flying in 3 simple steps</h1>
@@ -208,7 +223,7 @@
       </section>
 
       <!-- WHAT'S INCLUDED SECTION -->
-      <section class="section-included">
+      <section class="section-included" id="nav--section-included">
         <div class="included-content-container">
           <h3 class="subheading">Whats included</h3>
           <h1 class="heading-primary">What you'll get from a shoot</h1>
@@ -280,7 +295,11 @@
             </div>
           </div>
 
-          <a class="btn btn--cta-black btn--included" href="#">Sample shoot</a>
+          <a
+            class="btn btn--cta-black btn--included"
+            href="#nav--section-contact"
+            >Sample shoot</a
+          >
         </div>
         <div class="included-gallery-container">
           <div class="included-gallery-item">
@@ -341,7 +360,7 @@
       </section>
 
       <!-- TESTIMONIALS SECTION -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="nav--section-testimonials">
         <div class="testimonials-content-container">
           <div class="testimonials-header">
             <h3 class="subheading">Testimonials</h3>
@@ -349,50 +368,89 @@
           </div>
           <div class="testimonials-container">
             <div class="testimonial-authors">
-              <div class="testimonial-author author-active">
-                <img
-                  class="testimonial-author-img"
-                  src="content/imgs/testimonial-img-2.png"
-                />
-                <div class="testimonial-author-info">
-                  <p class="author-name">Charlie Brown</p>
-                  <p class="author-title">Project Manager of CLO</p>
+              <span class="testimonial-btn testimonial-btn--active">
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-author-img"
+                    src="content/imgs/testimonial-img-2.png"
+                  />
+                  <div class="testimonial-author-info">
+                    <p class="author-name">Charlie Brown</p>
+                    <p class="author-title">Project Manager of CLO</p>
+                  </div>
                 </div>
-              </div>
+              </span>
 
-              <div class="testimonial-author">
-                <img
-                  class="testimonial-author-img"
-                  src="content/imgs/testimonial-img-2.png"
-                />
-                <div class="testimonial-author-info">
-                  <p class="author-name">Charlie Brown</p>
-                  <p class="author-title">Project Manager of CLO</p>
+              <span class="testimonial-btn">
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-author-img"
+                    src="content/imgs/testimonial-img-2.png"
+                  />
+                  <div class="testimonial-author-info">
+                    <p class="author-name">Charlie Brown</p>
+                    <p class="author-title">Project Manager of CLO</p>
+                  </div>
                 </div>
-              </div>
+              </span>
 
-              <div class="testimonial-author">
-                <img
-                  class="testimonial-author-img"
-                  src="content/imgs/testimonial-img-2.png"
-                />
-                <div class="testimonial-author-info">
-                  <p class="author-name">Charlie Brown</p>
-                  <p class="author-title">Project Manager of CLO</p>
+              <span class="testimonial-btn">
+                <div class="testimonial-author">
+                  <img
+                    class="testimonial-author-img"
+                    src="content/imgs/testimonial-img-2.png"
+                  />
+                  <div class="testimonial-author-info">
+                    <p class="author-name">Charlie Brown</p>
+                    <p class="author-title">Project Manager of CLO</p>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="testimonial-slides-container">
+              <div class="js-slide-container">
+                <div class="testimonial-slides-row" id="js-testimonial-slide">
+                  <div class="testimonial-slide">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero ex, quidem velit non possimus reprehenderit assumenda
+                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
+                      reiciendis saepe repellendus itaque?
+                    </p>
+                  </div>
+                  <div class="testimonial-slide">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero ex, quidem velit non possimus reprehenderit assumenda
+                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
+                      reiciendis saepe repellendus itaque?
+                    </p>
+                  </div>
+                  <div class="testimonial-slide">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero ex, quidem velit non possimus reprehenderit assumenda
+                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
+                      reiciendis saepe repellendus itaque?
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="testimonial-text-container"></div>
           </div>
         </div>
       </section>
 
       <!-- CONTACT FORM -->
-      <section class="section-contact">
+      <section class="section-contact" id="nav--section-contact">
         <div class="contact-container">
           <div class="contact-form-container">
             <p class="contact-form-header">Book a flight</p>
-            <form class="contact-form" action="index.html" method="post">
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/abhondwe2006@gmail.com"
+              method="POST"
+            >
               <div class="contact-input--grid">
                 <input
                   type="text"

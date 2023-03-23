@@ -106,24 +106,7 @@
   .hero-header {
     font-size: 7.6rem;
   }
-
-  /* .hero-feature-description {
-    font-size: 1.8rem;
-  }
-
-  .hero-testimonial-description {
-    font-size: 1.8rem;
-  }
-
-  .btn:link,
-  .btn:visited {
-    font-size: 1.8rem;
-  }
-
-  .btn--cta-white:link,
-  .btn--cta-white:visited,
-  .btn--cta-black:link,
-  .btn--cta-black:visited {
-    padding: 1.2rem 2rem;
-  } */
 }
+
+/* FIXING FLEXBOX GAP IN SAFARI */
+/* SEE LECTURE 143 ON UDEMY (WATCH COMPLETELY) */
