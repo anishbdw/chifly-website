@@ -43,7 +43,7 @@
   <body>
     <main>
       <!-- NAVIGATION SECTION -->
-      <section class="section-navigation">
+      <header class="section-navigation">
         <nav class="nav-container">
           <div class="left-nav-container">
             <div class="logo">
@@ -65,7 +65,12 @@
             >
           </div>
         </nav>
-      </section>
+
+        <button class="btn--mobile-nav">
+          <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="mobile-nav-icon" name="close"></ion-icon>
+        </button>
+      </header>
 
       <!-- HERO SECTION -->
       <section class="section-hero" id="nav--section-hero">
@@ -411,7 +416,39 @@
               <div class="js-slide-container">
                 <div class="testimonial-slides-row" id="js-testimonial-slide">
                   <div class="testimonial-slide">
-                    <p>
+                    <div class="testimonial-stars-container">
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                    </div>
+                    <p class="testimonial-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero ex, quidem velit non possimus reprehenderit assumenda
+                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
+                      reiciendis saepe repellendus itaque?
+                    </p>
+                    <p class="testimonial-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vero ex, quidem velit non possimus reprehenderit assumenda
+                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
+                      reiciendis saepe repellendus itaque? Lorem ipsum dolor sit
+                      amet consectetur adipisicing elit. Debitis modi enim
+                      error, eveniet consequuntur alias ipsum maxime accusamus
+                      doloribus natus eligendi obcaecati neque expedita a?
+                      Doloremque, minima ullam. Et, dolorum.
+                    </p>
+                  </div>
+                  <div class="testimonial-slide">
+                    <div class="testimonial-stars-container">
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                    </div>
+                    <p class="testimonial-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Vero ex, quidem velit non possimus reprehenderit assumenda
                       quisquam sed magnam voluptate illo, ea rerum, quia ab quam
@@ -419,15 +456,14 @@
                     </p>
                   </div>
                   <div class="testimonial-slide">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vero ex, quidem velit non possimus reprehenderit assumenda
-                      quisquam sed magnam voluptate illo, ea rerum, quia ab quam
-                      reiciendis saepe repellendus itaque?
-                    </p>
-                  </div>
-                  <div class="testimonial-slide">
-                    <p>
+                    <div class="testimonial-stars-container">
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                      <ion-icon class="testimonial-star" name="star"></ion-icon>
+                    </div>
+                    <p class="testimonial-text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Vero ex, quidem velit non possimus reprehenderit assumenda
                       quisquam sed magnam voluptate illo, ea rerum, quia ab quam
@@ -446,11 +482,7 @@
         <div class="contact-container">
           <div class="contact-form-container">
             <p class="contact-form-header">Book a flight</p>
-            <form
-              class="contact-form"
-              action="https://formsubmit.co/abhondwe2006@gmail.com"
-              method="POST"
-            >
+            <form class="contact-form" action="index.html" method="post">
               <div class="contact-input--grid">
                 <input
                   type="text"
@@ -552,11 +584,17 @@
           <div class="footer-col">
             <p class="footer-col-header">Fast links</p>
             <!-- <a class="footer-col-link" href="#">Home</a> -->
-            <a class="footer-col-link" href="#">Features</a>
-            <a class="footer-col-link" href="#">How it works</a>
-            <a class="footer-col-link" href="#">Services</a>
-            <a class="footer-col-link" href="#">Testimonials</a>
-            <a class="footer-col-link" href="#">Contact</a>
+            <a class="footer-col-link" href="#nav--section-features"
+              >Features</a
+            >
+            <a class="footer-col-link" href="#nav--section-hiw">How it works</a>
+            <a class="footer-col-link" href="#nav--section-included"
+              >Services</a
+            >
+            <a class="footer-col-link" href="#nav--section-testimonials"
+              >Testimonials</a
+            >
+            <a class="footer-col-link" href="#nav--section-contact">Contact</a>
           </div>
 
           <!-- CONTACT COLUMN -->

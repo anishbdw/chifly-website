@@ -1,6 +1,5 @@
 /////////////////////////////
 // SMOOTH SCROLLING ANIMATION
-/////////////////////////////
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
@@ -27,9 +26,18 @@ allLinks.forEach(function (link) {
   });
 });
 
+////////////////////
+// MOBILE NAVIGATION
+const btnNavEl = document.querySelector(".btn--mobile-nav");
+const headerEl = document.querySelector(".section-navigation");
+console.log(headerEl);
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 /////////////////////
 // TESTIMONIAL SLIDER
-/////////////////////
 var btn = document.getElementsByClassName("testimonial-btn");
 var slide = document.getElementById("js-testimonial-slide");
 
@@ -59,7 +67,6 @@ btn[2].onclick = function () {
 
 ////////////////////
 // FIXING SAFARI GAP
-////////////////////
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
