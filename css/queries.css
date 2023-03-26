@@ -284,4 +284,92 @@
 }
 
 /* FIXING FLEXBOX GAP IN SAFARI */
-/* SEE LECTURE 143 ON UDEMY (WATCH COMPLETELY) */
+
+/* Example */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+/* Real fixes */
+.no-flexbox-gap .left-nav-container .logo {
+  margin-right: 10.8rem;
+}
+
+.no-flexbox-gap .left-nav-container .btn:not(:last-child) {
+  margin-right: 10.8rem;
+}
+
+.no-flexbox-gap .logo .logo-img {
+  margin-right: 1.2rem;
+}
+
+.no-flexbox-gap .hero-feature .hero-feature-icon {
+  margin-right: 1.8rem;
+}
+
+.no-flexbox-gap .hero-btn-container .btn:not(:last-child) {
+  margin-right: 1.8rem;
+}
+
+.no-flexbox-gap .hero-testimonial .hero-testimonial-icon-container {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .included-feature .included-feature-left {
+  margin-right: 2.2rem;
+}
+
+.no-flexbox-gap .testimonial-authors .testimonial-author:not(:last-child) {
+  margin-bottom: 5.2rem;
+}
+
+.no-flexbox-gap .testimonial-author .testimonial-author-img {
+  margin-right: 3.2rem;
+}
+
+.no-flexbox-gap
+  .testimonial-stars-container
+  .testimonial-star:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.no-flexbox-gap .contact-form .contact-input--grid {
+  margin-bottom: 6.4rem;
+}
+
+.no-flexbox-gap .contact-form .contact-form-text:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+
+.no-flexbox-gap
+  .contact-information-list
+  .contact-information-contact:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.no-flexbox-gap .contact-information-contact .contact-icon {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap
+  .contact-socials-container
+  .contact-social-link:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.no-flexbox-gap .footer-col--about .logo {
+  margin-bottom: 3.2rem;
+}
+
+.no-flexbox-gap .footer-col .footer-col-header,
+.no-flexbox-gap .footer-col .footer-col-link:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.no-flexbox-gap .footer-col-link-container .footer-img-icon {
+  margin-right: 2.2rem;
+}
+
+.no-flexbox-gap .legal-links .resource-link:not(:last-child) {
+  margin-right: 3.2rem;
+}
