@@ -30,11 +30,37 @@ allLinks.forEach(function (link) {
 // MOBILE NAVIGATION
 const btnNavEl = document.querySelector(".btn--mobile-nav");
 const headerEl = document.querySelector(".section-navigation");
-console.log(headerEl);
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+////////////////////
+// STICKY NAVIGATION
+const sectionHeroEl = document.querySelector(".section-hero");
+console.log(sectionHeroEl);
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-96px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 /////////////////////
 // TESTIMONIAL SLIDER
